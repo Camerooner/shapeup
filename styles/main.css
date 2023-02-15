@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
-
+    margin: 0;
+    padding: 0;
 }
 
 .clearfix::after {
@@ -33,6 +34,7 @@ body {
     background-color: white;
     border-radius: 25px;
     box-shadow: 5px 5px 20px 10px black;
+    padding-right: .25em;
 }
 
 header {
@@ -57,24 +59,124 @@ header h2 {
 
 header h2, header h3{
 
-    margin-left: 1em;
+    margin-left: .5em;
 }
 
-h1, h2, h3, h4 {
+h1 {
 
-    margin: .75em 1em;
+    padding: .75em 0;
 }
 
-p{
+h3, h4 {
 
-    margin: .75em ;
+    padding: .5em 0
 
 }
+
+p {
+
+    padding: .5em 0;
+}
+
 
 header img {
 
     float: left;
     margin: 0 .75em; 
+
+}
+
+
+/* ===============================
+
+        Navigation Menu
+
+================================*/
+
+#nav_menu {
+    margin: 0;
+
+}
+#nav_menu ul {
+
+    margin-top: 0;
+    list-style-type: none;
+    text-align: center;
+    border-top: 1px solid steelblue;
+    border-bottom: 3px solid steelblue;
+    background-color: lightsteelblue;
+    padding: 10px 0;
+}
+
+#nav_menu ul li {
+    display: inline;
+    border-right: 2px solid black;
+    padding: 10px 3em;
+}
+
+#nav_menu #last {
+
+    border-right: none;
+}
+
+#nav_menu ul li a {
+
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#nav_menu ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+#nav_menu ul ul {
+
+    display: none;
+
+}
+
+/* ===============================
+
+        Navigation List
+
+================================*/
+#nav_list h2 {
+
+
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+#nav_list ul {
+
+    list-style-type: none;
+}
+
+#nav_list li {
+
+    width: 90%;
+    margin: 0 auto .5em;
+
+}
+
+#nav_list a {
+
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightsteelblue;
+    padding: .5em;
+    color: black;
+
+}
+
+#nav_list a:hover {
+
+    background-color: steelblue;
+    color: white;
 
 }
 
@@ -107,12 +209,12 @@ aside a:hover, aside a:focus {
 section {
 
     float: right;
-    width: 75%;
+    width: 70%;
 
 }
 
 aside {
-
+    float: right;
     width: 30%;
 }
 
@@ -127,6 +229,15 @@ aside h3 {
 aside li {
 
     line-height: 1.5em;
+}
+
+blockquote {
+
+    width: 80%;
+    margin-left: 10%;
+    padding: 3px;
+    border-left: 25px solid lightcyan;
+    font-style: italic;
 }
 
 footer {
