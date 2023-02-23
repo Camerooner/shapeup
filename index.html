@@ -3,10 +3,23 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Shape up!</title>
 
 <link rel="stylesheet" href="styles/">
 <link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/slicknav.css">
+
+<!-- Slicknav Links ------------ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+	});
+	</script>
 
 	<!--[if lt IE 9]>
 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -24,6 +37,7 @@
 
 	</header>
 
+	<nav id="mobilemenu"></nav>
 	<nav id = "nav_menu">
 
 		<ul>
@@ -52,6 +66,7 @@
 	<main>
 
 		<aside>
+			<aside id="leftcol"></aside>
 			<nav id="nav_list">
 				<h3>Additional resources</h3>
 				<ul>

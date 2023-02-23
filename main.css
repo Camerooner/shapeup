@@ -83,6 +83,9 @@ header img {
 
     float: left;
     margin: 0 .75em; 
+    max-width: 140px;
+    min-width: 70px;
+    width: 100%;
 
 }
 
@@ -349,5 +352,69 @@ footer p {
     text-align: center;
     color: white;
     margin-top: 50px;
+
+}
+
+#mobilemenu {
+
+    display: none;
+
+}
+
+/*================================================
+
+
+                MEDIA QUERIES
+
+
+================================================*/
+
+@media only screen and (max-width: 900px) {
+
+    body {
+
+        box-shadow: none;
+        border: none;
+        font-size: 90%;
+
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    #nav_menu {
+
+        display: none;
+
+    }
+
+    #mobilemenu {
+
+        display: block;
+
+    }
+
+    .slicknav_menu {
+
+        background-color: steelblue;
+
+    }
+    #leftcol {
+
+        display: none;
+
+    }
+    section, aside, #rightcol {
+
+        float: none;
+        width: 95%;
+        margin: 10px auto;
+
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
 
 }
